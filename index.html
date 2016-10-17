@@ -5,7 +5,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-
 	<head>
 		<title>Jasjeev Singh Anand</title>
 		<meta charset="utf-8" />
@@ -15,89 +14,90 @@
 			.no-text-transform {
 				text-transform: none !important;
 			}
+
+			#projects {
+				margin-bottom: 0;
+			}
+
+			#resume {
+				background-color: #b74e91;
+				margin-top: 0;
+			}
+
+			#footer {
+				margin-top: 0;
+			}
 		</style>
-
-		<!-- Bootstrap Core CSS -->
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    	<!-- Custom Fonts -->
-	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-	    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-	    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-	    <!-- Theme CSS -->
-    	<link href="assets/css/grayscale.css" rel="stylesheet">
 
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-
-	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-		<!-- Navigation -->
-	    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-	        <div class="container">
-	            <div class="navbar-header">
-	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-	                    Menu <i class="fa fa-bars"></i>
-	                </button>
-	            </div>
-
-	            <!-- Collect the nav links, forms, and other content for toggling -->
-	            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-	                <ul class="nav navbar-nav">
-	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-	                    <li class="hidden">
-	                        <a href="#page-top"></a>
-	                    </li>
-	                    <li>
-	                        <a class="page-scroll" href="#projects">Projects</a>
-	                    </li>
-	                    <li>
-	                        <a class="page-scroll" href="#footer">Contact</a>
-	                    </li>
-	                </ul>
-	            </div>
-	            <!-- /.navbar-collapse -->
-	        </div>
-	        <!-- /.container -->
-	    </nav>
+	<body>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
+				<!-- Header -->
+					<header id="header" class="alt">
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#resume">Resume</a></li>
+								<li><a href="#footer">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
 				<!-- Banner -->
-					<section id="banner" >
-						<div class="inner underlineLinks">
-							<!--<div class="logo"><span class="icon fa-diamond"></span></div>-->
+					<section id="banner">
+						<div class="inner">
 							<h2 class="no-text-transform">Hi, I'm Jasjeev</h2>
-							<p class="no-text-transform">I'm a student of Computer Science at <a href="http://buffalo.edu">University at Buffalo</a></p>
-							<p class="no-text-transform">Some of my projects are listed below</p>
+							<p class="no-text-transform">I'm pursuing my BS in Computer Science at <a href="http://buffalo.edu">University at Buffalo</a></p>
+							<p class="no-text-transform">I've used Javascript, PHP and Java to build some cool stuff. Some of my projects are listed below:</p>
 						</div>
 					</section>
 
 				<!-- Wrapper -->
 					<section id="wrapper">
-						
+
 						<!-- Projects -->
 							<section id="projects" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Projects</h2>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/sift.png" alt="" /></a>
+											<a href="http://sift.jsanand.com" target="_blank" class="image"><img src="images/sift.png" alt="" /></a>
 											<h3 class="major">Siftweets</h3>
 											<p>An app that makes sifting through your Twitter feed a breeze.</p>
 											<a href="http://sift.jsanand.com" class="special" target="_blank">Learn more</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/cp.png" alt="" /></a>
+											<a href="http://cp.jsanand.com" target="_blank" class="image"><img src="images/cp.png" alt="" /></a>
 											<h3 class="major">College Pinboard</h3>
 											<p>An app to help college applicants to manage their college shortlist.</p>
 											<a href="http://cp.jsanand.com" class="special" target="_blank">Learn more</a>
 										</article>
 									</section>
+								</div>
+							</section>
+
+							<!-- Resume -->
+							<section id="resume" class="wrapper alt style1">
+								<div class="inner">
+											<h2 class="major">Resume</h2>
+											<p>You can grab a copy of my resume below:</p>
+											<a href="https://drive.google.com/file/d/0By2LYsj3QlwNclFIcXdNak5QQ28/view" target="_blank" class="button">Resume</a>
 								</div>
 							</section>
 
@@ -107,38 +107,9 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="field">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4"></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="fa-phone">(000) 000-0000</li>
-								<li class="fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
+							<p>Feel free to reach out to me via <a href="mailto:jasjeev4@gmail.com">email</a></p>
 							<ul class="copyright">
-								<li>&copy; Jasjeev Singh Anand. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Jasjeev Singh Anand. All rights reserved.</li>
 							</ul>
 						</div>
 					</section>
@@ -146,19 +117,8 @@
 			</div>
 
 		<!-- Scripts -->
-		    <!-- jQuery -->
-		    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-		    <!-- Bootstrap Core JavaScript -->
-		    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-		    <!-- Plugin JavaScript -->
-		    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-		    <!-- Theme JavaScript -->
-		    <script src="assets/js/grayscale.js"></script>
-
 			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
