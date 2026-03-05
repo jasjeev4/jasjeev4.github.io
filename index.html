@@ -110,12 +110,7 @@
                                 <h4 class="card-title" id="blog-title" style="text-align: center;"></h4>
                             </div>
                             <div class="card-body">
-                                <p id="blog-description" style="margin: 0;"></p>
-                            </div>
-                            <div class="card-body">
                                 <a id="blog-link" href="#" data-bs-hover-animate="rubberBand">Read post →</a>
-                                <br><br>
-                                <a href="/blog" data-bs-hover-animate="rubberBand">View all posts →</a>
                             </div>
                         </div>
                     </div>
@@ -286,7 +281,6 @@
                     const description = item.querySelector('description').textContent;
 
                     document.getElementById('blog-title').textContent = title;
-                    document.getElementById('blog-description').textContent = description;
                     document.getElementById('blog-link').href = link;
                     document.getElementById('blog-loading').style.display = 'none';
                     document.getElementById('blog-content').style.display = 'block';
