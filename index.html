@@ -98,6 +98,24 @@
             </div>
         </div>
     </header>
+    <div class="container" id="blog" style="margin-top: 50px; margin-bottom: 50px;">
+        <div class="row">
+            <div class="col">
+                <h1 style="text-align: center;">Blog</h1>
+                <div style="margin: 30px 0 0; text-align: center;">
+                    <div id="blog-loading" style="color: #666;">Loading latest post...</div>
+                    <div id="blog-content" style="display: none; margin: 20px 0;">
+                        <h3 id="blog-title" style="margin: 0 0 10px 0;"></h3>
+                        <p id="blog-description" style="color: #666; margin: 0 0 15px 0; font-style: italic;"></p>
+                        <a id="blog-link" href="#" style="color: #298bc6; text-decoration: none; font-weight: 500;">Read post →</a>
+                    </div>
+                    <div style="margin-top: 25px;">
+                        <a href="/blog" style="color: #298bc6; text-decoration: none; font-weight: 500;">View all posts →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container" id="projects">
         <div class="row">
             <div class="col">
@@ -247,6 +265,31 @@
     <script src="https://www.googletagmanager.com/gtag/js?id=UA-42486689-2"></script>
     <script src="assets/js/script.min.js?h=c49259260b05b1eacd7639e9177e1987"></script>
     <script>
+        // Fetch latest blog post from RSS feed
+        fetch('/blog/rss.xml')
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data, 'text/xml');
+                const item = xmlDoc.querySelector('item');
+
+                if (item) {
+                    const title = item.querySelector('title').textContent;
+                    const link = item.querySelector('link').textContent;
+                    const description = item.querySelector('description').textContent;
+
+                    document.getElementById('blog-title').textContent = title;
+                    document.getElementById('blog-description').textContent = description;
+                    document.getElementById('blog-link').href = link;
+                    document.getElementById('blog-loading').style.display = 'none';
+                    document.getElementById('blog-content').style.display = 'block';
+                }
+            })
+            .catch(err => {
+                console.error('Error fetching blog RSS:', err);
+                document.getElementById('blog-loading').textContent = 'Blog posts coming soon';
+            });
+
         /*
         document.getElementById('speaker-icon').addEventListener('click', function() {
             var audioPlayer = document.getElementById('audio-player');
