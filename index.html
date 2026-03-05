@@ -102,15 +102,22 @@
         <div class="row">
             <div class="col">
                 <h1 style="text-align: center;">Blog</h1>
-                <div style="margin: 30px 0 0; text-align: center;">
-                    <div id="blog-loading" style="color: #666;">Loading latest post...</div>
-                    <div id="blog-content" style="display: none; margin: 20px 0;">
-                        <h3 id="blog-title" style="margin: 0 0 10px 0;"></h3>
-                        <p id="blog-description" style="color: #666; margin: 0 0 15px 0; font-style: italic;"></p>
-                        <a id="blog-link" href="#" style="color: #298bc6; text-decoration: none; font-weight: 500;">Read post →</a>
-                    </div>
-                    <div style="margin-top: 25px;">
-                        <a href="/blog" style="color: #298bc6; text-decoration: none; font-weight: 500;">View all posts →</a>
+                <div style="margin: 10px 0 0;">
+                    <div id="blog-loading" style="color: #666; text-align: center; margin-top: 40px;">Loading latest post...</div>
+                    <div id="blog-content" style="display: none;">
+                        <div class="card d-table float-left" style="margin-top: 40px;">
+                            <div class="card-body">
+                                <h4 class="card-title" id="blog-title" style="text-align: center;"></h4>
+                            </div>
+                            <div class="card-body">
+                                <p id="blog-description" style="margin: 0;"></p>
+                            </div>
+                            <div class="card-body">
+                                <a id="blog-link" href="#" data-bs-hover-animate="rubberBand">Read post →</a>
+                                <br><br>
+                                <a href="/blog" data-bs-hover-animate="rubberBand">View all posts →</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
