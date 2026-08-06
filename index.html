@@ -58,6 +58,26 @@
             font-size: 32px;
             color: #ffffff;
         }
+
+        /* Prevent navbar from being hidden by scripts and provide a subtle transparent/solid background toggle */
+        #mainNav {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+            top: 0 !important;
+            z-index: 2000 !important;
+        }
+
+        .navbar-transparent {
+            background-color: rgba(0, 0, 0, 0.15) !important;
+            transition: background-color .25s ease;
+        }
+
+        .navbar-solid {
+            background-color: rgba(0, 0, 0, 0.6) !important;
+            transition: background-color .25s ease;
+        }
     </style>
 </head>
 
@@ -87,8 +107,7 @@
                         <div style="
     text-align: left;
     margin: 0 50px 0;
-    padding: 10px 0 10px;
-"><h1 style="font-size: 65px;margin: 0 12px 0;">Jasjeev Anand</h1><div style="margin: 10px 0 0;vertical-align: middle;">
+    padding: 10px 0 10px;"><h1 style="font-size: 65px;margin: 0 12px 0;">Jasjeev Anand</h1><div style="margin: 10px 0 0;vertical-align: middle;">
                     </div>
                 </div>
                 <div style="padding: 0 40px 0; /* border: 1px solid red; */"><hr style="border: 1px solid white;"></div>
@@ -154,7 +173,7 @@
                             </div>
                             <div class="col-sm-6 align-self-center">
                                 <div class="card-body" style="/*display: table-cell;*/width: 100%;">
-                                    <p>Playlist Remix is an iOS app that's based on an open source library I authored. The app builds a playlist of a Spotify user's mostly recently added tracks across all their playlists.</p></div>
+                                    <p>Playlist Remix is an iOS app that's based on an open source library I authored. The app builds a playlist of a Spotify user's mostly recently added tracks a[...] 
                                 </div>
                             </div>
 
@@ -163,7 +182,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: 100%;*/" src="assets/img/recents_playlist.png?h=fe5aab921845b4de3ada4e3a8800fd55"></div>
+                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: [...]">
                             </div>
                             <div class="col-sm-6 align-self-center">
                                 <div class="card-body" style="/*display: table-cell;*/width: 100%;">
@@ -186,7 +205,7 @@
                             <div class="col-sm-6 align-self-center">
                                 <div class="card-body" style="/*display: table-cell;*/width: 100%;">
                                     <h6 class="text-muted mb-2">A game designed using SwiftUI</h6>
-                                    <p>Card Flip is a game designed for audiences of all ages. The game is avaiable under the Creative Commons license.&nbsp;</p><a data-bs-hover-animate="rubberBand" href="https://github.com/jasjeev4/CardFlip-Game" target="_blank">Source on Github</a></div>
+                                    <p>Card Flip is a game designed for audiences of all ages. The game is avaiable under the Creative Commons license.&nbsp;</p><a data-bs-hover-animate="rubberBa[...]
                                 </div>
                         </div>
                     </div>
@@ -197,7 +216,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: 100%;*/" src="assets/img/cp.png?h=464dbb90ce184697a6e6f295baf05368"></div>
+                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: [...]">
                             </div>
                             <div class="col-sm-6 align-self-center">
                                 <div class="card-body" style="/*display: table-cell;*/width: 100%;">
@@ -212,12 +231,12 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: 100%;*/" src="assets/img/sift.png?h=3e481b788df8bb743b91435b261f324a"></div>
+                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: [...]">
                             </div>
                             <div class="col-sm-6 align-self-center">
                                 <div class="card-body" style="/*display: table-cell;*/width: 100%;">
                                     <h6 class="text-muted mb-2">Web app for a summarized Twitter feed</h6>
-                                    <p>Siftweets is a web application that allowed you to 'sift' through your Twitter feed. It made this possbible by dividing reordering tweets on your feed by relative popularity.&nbsp;</p>
+                                    <p>Siftweets is a web application that allowed you to 'sift' through your Twitter feed. It made this possbile by dividing reordering tweets on your feed by re[...]
                                 </div>
                             </div>
                         </div>
@@ -235,13 +254,13 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: 100%;*/" src="assets/img/Screen%20Shot%202019-10-06%20at%201.23.14%20AM.png?h=104f6821ae28c9a0e3bac12fc0e694bb"></div>
+                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: [...]">
                             </div>
                             <div class="col-sm-6 align-self-center">
                                 <div class="card-body" style="/*display: table-cell;*/width: 100%;">
                                 <h6 class="text-muted mb-2">Winner at UB Hacking 2018</h6>
-                                    <p>The idea for Palatable was to create an app that gives you the dollar value of a given recipe from a selection from the New York Times. It then gives you a breakdown of the prices of corresponding products for ingredients
-                                        of the recipes you select at Wegmans.</p><a data-bs-hover-animate="rubberBand" href="https://devpost.com/software/palatable" target="_blank">See the Devpost</a></div>    
+                                    <p>The idea for Palatable was to create an app that gives you the dollar value of a given recipe from a selection from the New York Times. It then gives you a [...]
+                                        of the recipes you select at Wegmans.</p><a data-bs-hover-animate="rubberBand" href="https://devpost.com/software/palatable" target="_blank">See the Devpos[...]
                             </div>
                         </div>
                     </div>
@@ -251,12 +270,12 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: 100%;*/" src="assets/img/twitter_effect.jpg?h=db6fa5c2d8f85a0874033f4fdc57a615"></div>
+                                <div class="card-body" style="/*display: table-cell;*/width: 100%;"><img data-aos="fade" data-aos-duration="500" data-aos-once="true" style="width: 100%;/*height: [...]">
                             </div>
                             <div class="col-sm-6 align-self-center">
                                 <div class="card-body" style="/*display: table-cell;*/width: 100%;">
                                     <h6 class="text-muted mb-2">Demoed at Brickhacks 4</h6>
-                                    <p>A voice assistant prototype to retrive tweets for a user from a search or their timeline.&nbsp;</p><a data-bs-hover-animate="rubberBand" href="https://devpost.com/software/twitter-effect" target="_blank">See the Devpost</a>
+                                    <p>A voice assistant prototype to retrive tweets for a user from a search or their timeline.&nbsp;</p><a data-bs-hover-animate="rubberBand" href="https://devpo[...]
                                 </div>
                             </div>
                         </div>
@@ -270,9 +289,9 @@
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
                     <ul class="list-inline text-center">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/jasjeev/" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin-square fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="https://www.github.com/jasjeev4" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
-                        <li class="list-inline-item"><a href="https://www.x.com/JasjeevAnand" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-brands fa-x-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/jasjeev/" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="[...]
+                        <li class="list-inline-item"><a href="https://www.github.com/jasjeev4" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa[...]
+                        <li class="list-inline-item"><a href="https://www.x.com/JasjeevAnand" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-[...]
                     </ul>
                     <p class="text-muted copyright">Copyright&nbsp;©&nbsp;Jasjeev Anand 2026</p>
                 </div>
@@ -285,6 +304,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://www.googletagmanager.com/gtag/js?id=UA-42486689-2"></script>
     <script src="assets/js/script.min.js?h=c49259260b05b1eacd7639e9177e1987"></script>
+    <script src="assets/js/nav-fix.js"></script>
     <script>
         // Fetch latest blog post from RSS feed
         fetch('/blog/rss.xml')
