@@ -68,6 +68,13 @@
             font-size: 32px;
             color: #ffffff;
         }
+
+        /* d-table sets display:table, which ignores max-height */
+        .card {
+            display: block !important;
+            max-height: 775px;
+            overflow-y: auto;
+        }
     </style>
     <script type="application/ld+json">
     {
@@ -94,7 +101,7 @@
                 class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="/blog" target="_blank">Blog </a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://public-website-resume.s3.us-east-1.amazonaws.com/JasjeevAnandSWEResume.pdf" target="_blank" download>Resume</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/resume.pdf" target="_blank" download>Resume</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#hackathons">Hackathons</a></li>
@@ -380,7 +387,7 @@
     <script src="https://kit.fontawesome.com/21fb2fb7fa.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://www.googletagmanager.com/gtag/js?id=UA-42486689-2"></script>
-    <script src="assets/js/script.min.js?h=90baf80ebe5144d02a20e181b4162d7b"></script>
+    <script src="assets/js/script.min.js?h=814b8fc115f7e1f93efc38f6223c5696"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script>
         // Fetch latest blog post from RSS feed
